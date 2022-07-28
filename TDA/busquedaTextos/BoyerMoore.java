@@ -1,5 +1,8 @@
 import java.util.*;
 
+//El procesado de dicho algoritmo tiene una complejidad de O(m+s)m es el tamano de patron y s del alfalbeto. En este caso asumimos que el todos los caracteres del texto son el alfabeto.
+//la complejidad del "cuerpo " del algoritmo, es decir hacer los saltos y verificar hacia atras, en el peor de los casos es de complejidad nm, y en el mejor de los casos es de m/m
+//sumando nm+m+s=(n+1)m+s= O(nm+s) ene el peor de los casos seria n/m+m+s
 public class BoyerMoore{
   private String patron;
   private String texto;
